@@ -78,7 +78,7 @@ class WorkOutViewModel extends ChangeNotifier {
 
   //광고
   static final AdRequest request = AdRequest(
-    testDevices: <String>['ca-app-pub-3940256099942544/1033173712'],
+    testDevices: <String>['ca-app-pub-2398130378795170/1636177738'],
   );
   late InterstitialAd _interstitialAd;
   bool _interstitialReady = false;
@@ -92,7 +92,7 @@ class WorkOutViewModel extends ChangeNotifier {
 
   void _createInterstitialAd() {
     _interstitialAd = InterstitialAd(
-      adUnitId: InterstitialAd.testAdUnitId,
+      adUnitId: 'ca-app-pub-2398130378795170/1636177738',
       request: request,
       listener: AdListener(
         onAdLoaded: (Ad ad) {

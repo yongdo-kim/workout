@@ -66,7 +66,7 @@ class ShopViewModel extends ChangeNotifier {
 
 
   static final AdRequest request = AdRequest(
-    testDevices: <String>['ca-app-pub-3940256099942544/5354046379'],
+    testDevices: <String>['ca-app-pub-2398130378795170/2697977961'],
     keywords: <String>['foo', 'bar'],
     contentUrl: 'http://foo.com/bar.html',
     nonPersonalizedAds: true,
@@ -301,7 +301,7 @@ class ShopViewModel extends ChangeNotifier {
 
   Future _createRewardedAd() async {
     _rewardedAd = RewardedAd(
-      adUnitId: RewardedAd.testAdUnitId,
+      adUnitId: 'ca-app-pub-2398130378795170/2697977961',
       request: request,
       listener: AdListener(
           onAdLoaded: (Ad ad) {
